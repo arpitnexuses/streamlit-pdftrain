@@ -21,7 +21,7 @@ def get_pdf_text(pdf_list):
 def get_text_chunks(text):
     text_splitter=CharacterTextSplitter(
         separator="\n",
-        chunk_size=1000,
+        chunk_size=6000,
         chunk_overlap=200,
         length_function=len,
     )
